@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Wiki Summary</title>
+        <style>
+            body{
+                font-family: 'Droid Sans', sans-serif;
+                background-size: 40px 40px;
+                background-image:
+                  linear-gradient(to right, rgba(236, 236, 236, 1) 1px, transparent 1px),
+                  linear-gradient(to bottom, rgba(236, 236, 236, 1) 1px, transparent 1px);
+            }
+            .title-div{
+                font-size: 24px;
+                margin: 50px;
+            }
+            .box{
+                background-color: #eee;
+                margin: 2.5em auto 0 auto;
+                border: 1px solid;
+                border-color: #ddd #aaa #aaa #ddd;
+                padding: 2em;
+                width: 75%;
+            }
+            p{
+                font-family: Inconsolata,"DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+                font-size: 20px;
+                text-align: justify;
+            }
+            .tags {
+                list-style: none;
+                margin: 0;
+                overflow: hidden; 
+                padding: 0;
+                font: 13px/1.5 'PT Sans', serif;
+                margin: 5px;
+              }
+              
+              .tags li {
+                float: left; 
+              }
+              
+              .tag {
+                background: #eee;
+                border-radius: 3px 0 0 3px;
+                color: #999;
+                display: inline-block;
+                height: 26px;
+                line-height: 26px;
+                padding: 0 20px 0 23px;
+                position: relative;
+                margin: 0 10px 10px 0;
+                text-decoration: none;
+                -webkit-transition: color 0.2s;
+              }
+              
+              .tag::before {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+                content: '';
+                height: 6px;
+                left: 10px;
+                position: absolute;
+                width: 6px;
+                top: 10px;
+              }
+              
+              .tag::after {
+                background: #fff;
+                border-bottom: 13px solid transparent;
+                border-left: 10px solid #eee;
+                border-top: 13px solid transparent;
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              
+              .tag:hover {
+                background-color: #3498db;
+                color: white;
+              }
+              
+              .tag:hover::after {
+                 border-left-color: #3498db; 
+              }
+        </style>
+    </head>
+    <body>
+        <div class="title-div">
+        Topic:&nbsp{{topic}}
+        <br><br>
+        Summary :</div>
+        <div class="box">
+           <p> {{output}} </p>
+        </div>
+    <ul class="tags">
+        <li><a href="https://jesinofficial.github.io/" class="tag">Made by : Jesin Beschi Raj</a></li>
+    </ul>
+    </body>
+</html>
